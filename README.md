@@ -40,7 +40,7 @@ installing h5py
 
 As the files are in Jupyter, make sure Jupyter is installed and run
 
-       	   jupyter notebook <file_name>
+       jupyter notebook <file_name>
 
 
 
