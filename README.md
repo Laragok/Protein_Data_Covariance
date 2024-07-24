@@ -38,9 +38,9 @@ installing h5py
 
 ## Running The Code
 
-As the files are in Jupyter make sure Jupyter is installed and run:
+As the files are in Jupyter, make sure Jupyter is installed and run
 
-   Jupyter notebook <file_name>
+       	   Jupyter notebook <file_name>
 
 
 
