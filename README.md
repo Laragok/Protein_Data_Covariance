@@ -25,7 +25,7 @@ installing Bio
 >pip install biopython
 
 installing h5py
->pip install h5py
+	   pip install h5py
 
 Running The Code
 
