@@ -1,7 +1,9 @@
 
+# Protein Data Covariance: Predicting Phenotypes Based On Amino Acid Sequences
+
 My project "Covariance In Proteins" is a mix of computing and biology. It models predictions by  using the "em_max", "ex_max" and "states_0_brightness" phenotypes on two different protein representations "pc_coords" and "proteins_projeted_pc_coords". The aim of the project is to determine to what capacity these phenotypes can be predicted by the R^2 predictive metric using a linear model of the above representations.
 
-# Prerequisite Installations
+## Prerequisite Installations
 
 installing numpy
 
@@ -34,7 +36,7 @@ installing h5py
 
 	   pip install h5py
 
-# Running The Code
+## Running The Code
 
 	python3 <file_name>
 
