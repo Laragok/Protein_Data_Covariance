@@ -4,7 +4,7 @@ My project "Covariance In Proteins" is a mix of computing and biology. It models
 Prerequisite Installations
 
 installing numpy
-	   pip install numpy
+>pip install numpy
 
 installing os
 	   pip3 install os_command_py
