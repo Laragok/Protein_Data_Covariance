@@ -7,25 +7,25 @@ installing numpy
 >pip install numpy
 
 installing os
-	   pip3 install os_command_py
+>pip3 install os_command_py
 
 installing matpotlib
-	   python3 -m pip install -U matplotlib
+>python3 -m pip install -U matplotlib
 
 installing scikit-learn
-	   pip3 install -U scikit-learn
+>pip3 install -U scikit-learn
 
 installing seaborn
-	   pip install seaborn
+>pip install seaborn
 
 installing pandas
-	   pip install pandas
+>pip install pandas
 
 installing Bio
-	   pip install biopython
+>pip install biopython
 
 installing h5py
-	   pip install h5py
+>pip install h5py
 
 
 
