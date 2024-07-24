@@ -5,6 +5,10 @@ My project "Covariance In Proteins" is a mix of computing and biology. It models
 
 ## Prerequisite Installations
 
+installing jupyter notebook
+
+	   pip install notebook
+
 installing numpy
 
 	   pip install numpy
