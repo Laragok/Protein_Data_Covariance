@@ -32,7 +32,7 @@ git clone <ssh_key>
 ```
 git clone <github_cli>
 ```
-2. To open the notebooks, make sure Jupyter is installed and use the commands:
+2. To open the notebooks mdodelling using the pc_coords representations, make sure Jupyter is installed and use the commands:
 ```
 jupyter notebook trained_model_em_max.ipynb
 ```
@@ -45,7 +45,21 @@ opens the model for pc_coords representation of proteins' most efficent ... rang
 jupyter notebook trained_model_states_0_brightness.ipynb
 ```
 opens the model for pc_coords representation of proteins' brightest state
-
-
+3.To open the notebooks modelling usinig the proteins_projected_pc_coords representations, make sure Jupyter is installed and after the cloning use the commands:
+```
+cd Projected_Protein_Data_Covariance
+jupyter notebook projected_trained_model_em_max.ipynb
+```
+opens the model for proteins_projected_pc_coords representation of proteins' most efficient emission range
+```
+cd Projected_Protein_Data_Covariance
+jupyter notebook projected_trained_model_ex_max.ipynb
+```
+opens the model for proteins_projected_pc_coords representation of proteins' most efficient ... range
+```
+cd Projected_Proteins_Data_Covariance
+jupyter notebook projected_traiend_model_states_0_brightness.ipynb
+```
+opens the modell for proteins_projected_pcp_coords representation of proteins' brightest state	
 
 
