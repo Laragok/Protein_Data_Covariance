@@ -54,7 +54,11 @@ cd <directory_name>
 3. Clone the data files and the notebooks into your project directory by clicking on the green code button and copying either of the option into your command line using the correlated command:
 ```
 git clone <web_url>
+```
+```
 git clone <ssh_key>
+```
+```
 git clone <github_cli>
 ```
 4. To open the notebooks, make sure Jupyter is installed and use the command:
