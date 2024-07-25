@@ -7,7 +7,7 @@ My project "Covariance In Proteins" is a mix of computing and biology. It models
 
 installing with pip:
 ```
-pip install notebook numpy seborn pandas biopython h5py
+pip install notebook numpy seaborn pandas biopython h5py
 ````
 
 installing with pip3:
