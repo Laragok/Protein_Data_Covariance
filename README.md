@@ -7,45 +7,45 @@ My project "Covariance In Proteins" is a mix of computing and biology. It models
 
 installing Jupyter Notebook:
 
-	   pip install notebook
+```pip install notebook
 
 installing numpy:
 
-	   pip install numpy
+```pip install numpy
 
 installing os:
 
-	   pip3 install os_command_py
+```pip3 install os_command_py
 
 installing matpotlib:
 
-	   python3 -m pip install -U matplotlib
+```python3 -m pip install -U matplotlib
 
 installing scikit-learn:
 
-	   pip3 install -U scikit-learn
+```pip3 install -U scikit-learn
 
 installing seaborn:
 
-	   pip install seaborn
+```pip install seaborn
 
 installing pandas:
 
-	   pip install pandas
+```pip install pandas
 
 installing Bio:
 
-	   pip install biopython
+```pip install biopython
 
 installing h5py:
 
-	   pip install h5py
+```pip install h5py
 
-## Running The Code
+## Running The Code From The Command Line
 
 As the files are in Jupyter, make sure Jupyter is installed and run:
 
-       jupyter notebook <file_name>
+```jupyter notebook <file_name>
 
 
 
