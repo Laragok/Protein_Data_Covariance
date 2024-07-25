@@ -5,53 +5,24 @@ My project "Covariance In Proteins" is a mix of computing and biology. It models
 
 ## Prerequisite Installations
 
-installing Jupyter Notebook:
+installing with pip:
 ```
-pip install notebook
+pip install notebook, numpy, seborn, pandas, biopython, h5py
 ````
-installing numpy:
+
+installing with pip3:
 ```
-pip install numpy
-````
-installing os:
+install os_command_py -U scikit-learn
 ```
-pip3 install os_command_py
-```
+
 installing matpotlib:
 ```
 python3 -m pip install -U matplotlib
 ```
-installing scikit-learn:
-```
-pip3 install -U scikit-learn
-```
-installing seaborn:
-```
-pip install seaborn
-```
-installing pandas:
-```
-pip install pandas
-```
-installing Bio:
-```
-pip install biopython
-```
-installing h5py:
-```
-pip install h5py
-```
+
 ## Running The Code From The Command Line
 
-1. Create a directory for your project with the command:
-```
-mkdir <directory_name>
-```
-2. Go into the directory you have created for your project with the command:
-```
-cd <directory_name>
-```
-3. Clone the data files and the notebooks into your project directory by clicking on the green code button and copying either of the option into your command line using the correlated command:
+1. Clone the data files and the notebooks into your project directory by clicking on the green code button and copying either of the option into your command line using the correlated command:
 ```
 git clone <web_url>
 ```
@@ -61,7 +32,7 @@ git clone <ssh_key>
 ```
 git clone <github_cli>
 ```
-4. To open the notebooks, make sure Jupyter is installed and use the command:
+2. To open the notebooks, make sure Jupyter is installed and use the command:
 ```
 jupyter notebook <notebook_name>
 ```
