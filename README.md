@@ -51,12 +51,12 @@ mkdir <directory_name>
 ```
 cd <directory_name>
 ```
-3.Clone the data files and the notebooks into your project directory by clicking on the green code button and copying either of the option into your command line using the either of the commands:
+3.Clone the data files and the notebooks into your project directory by clicking on the green code button and copying either of the option into your command line using either of the commands:
 ```
 git clone <web_url>
 git clone <ssh_key>
 git clone <github_cli>
-
+```
 As the files are in Jupyter, make sure Jupyter is installed and run:
 ```
 jupyter notebook <notebook_name>
