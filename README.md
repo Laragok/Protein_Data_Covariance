@@ -5,17 +5,17 @@ My project "Covariance In Proteins" is a mix of computing and biology. It models
 
 ## Prerequisite Installations
 
-installing with pip:
+### installing with pip:
 ```
 pip install notebook numpy seaborn pandas biopython h5py
 ````
 
-installing with pip3:
+### installing with pip3:
 ```
 pip3 install os_command_py -U scikit-learn
 ```
 
-installing matpotlib:
+### installing matpotlib:
 ```
 python3 -m pip install -U matplotlib
 ```
@@ -37,12 +37,10 @@ git clone <github_cli>
 jupyter notebook trained_model_em_max.ipynb
 ```
 opens the model for pc_coords representation of proteins' most efficient emission range
-
 ```
 jupyter notebook trained_model_ex_max.ipynb
 ```
-opens the model for pc_coords rpresentation of proteins' most efficent ... range
-
+opens the model for pc_coords representation of proteins' most efficent ... range
 ```
 jupyter notebook trained_model_states_0_brightness.ipynb
 ```
