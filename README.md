@@ -36,15 +36,15 @@ git clone <github_cli>
 ```
 jupyter notebook trained_model_em_max.ipynb
 ```
-opens the pc_coords representation of proteins' most efficient emission range
+opens the model for pc_coords representation of proteins' most efficient emission range
 ```
 jupyter notebook trained_model_ex_max.ipynb
 ```
-opens the pc_coords rpresentation of proteins' most efficent ... range
+opens the model for pc_coords rpresentation of proteins' most efficent ... range
 ```
 jupyter notebook trained_model_states_0_brightness.ipynb
 ```
-pc_coords representation of proteins' brightest state
+opens the model for pc_coords representation of proteins' brightest state
 
 
 
