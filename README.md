@@ -12,7 +12,7 @@ pip install notebook numpy seaborn pandas biopython h5py
 
 installing with pip3:
 ```
-install os_command_py -U scikit-learn
+pip3 install os_command_py -U scikit-learn
 ```
 
 installing matpotlib:
