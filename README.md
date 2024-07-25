@@ -43,21 +43,21 @@ pip install h5py
 ```
 ## Running The Code From The Command Line
 
-1.Create a directory for your project with the command:
+1. Create a directory for your project with the command:
 ```
 mkdir <directory_name>
 ```
-2.Go into the directory you have created for your project with the command:
+2. Go into the directory you have created for your project with the command:
 ```
 cd <directory_name>
 ```
-3.Clone the data files and the notebooks into your project directory by clicking on the green code button and copying either of the option into your command line using either of the commands:
+3. Clone the data files and the notebooks into your project directory by clicking on the green code button and copying either of the option into your command line using the correlated command:
 ```
 git clone <web_url>
 git clone <ssh_key>
 git clone <github_cli>
 ```
-As the files are in Jupyter, make sure Jupyter is installed and run:
+3. To open the notebooks, make sure Jupyter is installed and use the command:
 ```
 jupyter notebook <notebook_name>
 ```
