@@ -57,7 +57,7 @@ git clone <web_url>
 git clone <ssh_key>
 git clone <github_cli>
 ```
-3. To open the notebooks, make sure Jupyter is installed and use the command:
+4. To open the notebooks, make sure Jupyter is installed and use the command:
 ```
 jupyter notebook <notebook_name>
 ```
