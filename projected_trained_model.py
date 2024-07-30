@@ -1,7 +1,6 @@
 #! /usr/bin/env python3
 
-"""Read in protein data files [related to bla bla], extract a column,
-and train a model on the projected [bla bla bla]."""
+"""Read in protein data files with the variables ex_max , em_max and states_0_brightness, extract a column, and train a model in representation of proteins_projected_pc_coords."""
 
 import os
 import sys
