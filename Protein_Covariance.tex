@@ -1,0 +1,254 @@
+\documentclass[14pt]{beamer}
+
+% Presento style file
+\usepackage{config/presento}
+\usepackage{multicol}
+% custom command and packages
+\input{config/custom-command}
+
+% Information
+\title{Protein Covariance:}
+\subtitle{Predicting Phenotypes Based On Amino Acid Sequences}
+\author{Lara Gokcelioglu}
+\institute{Institute For Computing In Research Santa Fe}
+\date{\today}
+
+\begin{document}
+
+% Title page
+\begin{frame}[plain]
+\maketitle
+\end{frame}
+
+% sections in the presentation
+\begin{frame}{Project Overview}
+ \color{colorblue}\begin{itemize}
+  \item\begin{center}Mix of \color{colororange}\textbf{biology and computing}\end{center}
+  \item\begin{center}Phenotypes of proteins \color{colororange}\textbf{based on their amino acid sequences}.\end{center}
+  \item\begin{center}6 different models \color{colororange}\textbf{for 3 different phenotypes and 2 representations each}.\end{center}
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Dataset}
+ \begin{fullpageitemize}
+      \item\color{colorgreen}\begin{center}\largetext{The dataset consists of \color{colororange}\textbf{227 proteins }\color{colorgreen} and each protein’s \color{colororange}\textbf{amino acid sequence}\color{colorgreen}--which later gets \color{colororange}\textbf{fixed to 512 positions.}}\end{center}
+ \end{fullpageitemize}
+\end{frame}
+
+\begin{frame}
+\begin{figure}
+        \centering
+        \includegraphics[width=1.0\linewidth]{dataset.png}
+        \caption{Partial Dataset}
+        \label{fig:enter-label}
+    \end{figure}    
+\end{frame}
+
+\begin{frame}{Phenotypes}
+ \begin{fullpageitemize}
+  \item\color{colorblue}\begin{center}\largetext{The first phenotype is \color{colororange}\textbf{em\_max}}\end{center}
+  \item \begin{center}\largetext{The second phenotype is \color{colororange}\textbf{ex\_max}}\end{center}
+  \item \begin{center}\largetext{The third and last phenotype is \color{colororange}\textbf{states\_0\_brightness}}\end{center}
+ \end{fullpageitemize}
+\end{frame}
+
+\begin{frame}{Representations}
+ \begin{fullpageitemize}
+  \item\begin{center}\largetext{\color{colorgreen}\textbf{There are two representations of the data:}} \end{center}
+  \item\color{colororange} \begin{center}\largetext{pc\_coords}\end{center}
+  \item\color{colororange} \begin{center}\largetext{proteins\_projected\_pc\_coords}\end{center}
+ \end{fullpageitemize}
+\end{frame}
+
+\begin{frame}{\textbf{Data Manipulation}}
+ \begin{fullpageitemize}
+  \item\color{colorblue}\begin{center}\largetext{\textbf{aminoacids}}\end{center}
+  \item\color{colorblue}\begin{center}\largetext{\textbf{leftjustified\_seqs}}\end{center}
+  \item\color{colorblue}\begin{center}\largetext{\textbf{match\_aminoacids}}\end{center}
+  \item\color{colorblue}\begin{center}\largetext{\textbf{Singular Value Decomposition}}\end{center} 
+ \end{fullpageitemize}
+\end{frame}
+
+\begin{frame}{Aminoacids}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\linewidth]{aminoacids.png}
+        \caption{aminoacids Variable}
+        \label{fig:enter-label}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{leftjustified\_seqs}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\linewidth]{leftjustified.png}
+        \caption{leftjustified\_seqs variable}
+        \label{fig:enter-label}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{match\_amoinoacids Function}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\linewidth]{match_aminoacids.png}
+        \caption{match\_aminoacids function}
+        \label{fig:enter-label}
+    \end{figure}
+   \end{frame}
+
+\begin{frame}{Singular Value Decomposition}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\linewidth]{svd.png}
+        \caption{Application Of SVD}
+        \label{fig:enter-label}
+    \end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Training The Model}
+    \begin{itemize}
+    \item
+    \item\color{colorblue}\largetext\textbf{K-Fold Validation}
+        \begin{itemize}
+         \item
+         \item\color{colorgreen}\largetext\textbf{splits k=10}
+         \item
+         \item\begin{center}\largetext\textbf{90\% train set vs. 10\% test set}\end{center} 
+         \item
+         \end{itemize}
+ \end{itemize}
+ \end{frame}
+
+\begin{frame}
+       \begin{figure}
+            \centering
+            \includegraphics[width=0.7\linewidth]{training1.png}            \label{fig:enter-label}
+           \section{training 2}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.7\linewidth]{training2.png}
+                \label{fig:enter-label}
+            \end{figure}
+        \end{figure}
+\end{frame}
+
+\begin{frame}{K-Fold Cross Validation}
+    \begin{fullpageitemize}
+  \item\color{colorgreen}\begin{center}\largetext{Increased \color{colororange}\textbf{accuracy}}\end{center}
+  \item\color{colorgreen}\begin{center}\largetext{\color{colororange}\textbf{More data }\color{colorgreen}for both sets}\end{center}
+  \item\color{colorgreen}\begin{center}\largetext{\color{colororange}\textbf{Reduces variance}}\end{center}
+    \end{fullpageitemize}
+\end{frame}
+
+\begin{frame}{$R^2$ Value}
+    \begin{itemize}
+        \item\color{colorblue}\largetext{The strength of the \color{colororange}\textbf{relationship between the model and the dependent variable}}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.5\linewidth]{r2.png}
+            \label{fig:enter-label}
+        \end{figure}
+        \item\color{colorblue}\largetext{Coefficient of determination}
+
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Analysis Of Em\_Max}
+    \begin{figure}
+     \centering
+     \includegraphics[width=0.75\linewidth]{Screenshot at 2024-07-28 11-33-26.png}
+     \caption{Analysis Of Most Efficient Emission Wavelength}
+     \label{fig:enter-label}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Analysis Of Projected Em\_Max}
+    \begin{figure}
+        \begin{figure}
+       \centering
+       \includegraphics[width=0.75\linewidth]{projectedemmax.png}
+       \caption{Analysis Of Most Efficient Emission Wavelength In Projected Representation}
+       \label{fig:enter-label}
+        \end{figure}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Analysis Of Ex\_Max}
+    \begin{figure}
+     \centering
+     \includegraphics[width=0.75\linewidth]{exmax.png}
+     \caption{Analysis Of Most Efficient Excitation Wavelength}
+     \label{fig:enter-label}
+    \end{figure}
+    \end{frame}
+
+\begin{frame}{Analysis Of Projected Ex\_Max}
+    \begin{figure}
+     \centering
+     \includegraphics[width=0.50\linewidth]{projectedexmax.png}
+     \caption{Analysis Of Most Efficient Excitation Wavelength In Projected Representation}
+     \label{fig:enter-label}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Analysis Of States\_0\_Brightness}
+    \begin{figure}
+     \centering
+     \includegraphics[width=0.50\linewidth]{brightness.png}
+     \caption{Analysis of Brightness}
+     \label{fig:enter-label}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Analysis Of Projected States\_0\_Brightness}
+    \begin{figure}
+     \centering
+     \includegraphics[width=0.50\linewidth]{projectedbrightness.png}
+     \caption{Analysis of Brightness In Projected Representation}
+     \label{fig:enter-label}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{pc\_coords $R^2$ Values}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.75\linewidth]{Figure_1.png}
+        \label{fig:enter-label}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{proteins\_projected\_pc\_coords $R^2$ Values}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.75\linewidth]{Figure_3.png}
+        \label{fig:enter-label}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Future Path}
+    \begin{fullpageitemize}
+        \item\color{colorgreen} \begin{center}\largetext{Considering more folds in analysis}\end{center}
+        \item\color{colorgreen} \begin{center}\largetext{Moving beyond linear models}\end{center}
+        \item\color{colorgreen} \begin{center}\largetext{Including more parameters}\end{center}
+    \end{fullpageitemize}
+\end{frame}
+
+\begin{frame}{Challenges}
+    \begin{fullpageitemize}
+        \item\color{colorblue} \begin{center}\largetext{Choosing the best method to train a model on}\end{center}
+        \item\color{colorblue} \begin{center}\largetext{Lack of answers}\end{center}
+        \item\color{colorblue} \begin{center}\largetext{Inaccurate results}\end{center}
+    \end{fullpageitemize}
+\end{frame}
+
+\begin{frame}{References}
+    \begin{itemize}
+        \item\color{colorblue}(N.d.). Statisticsbyjim.com. Retrieved July 28, 2024, from https://statisticsbyjim.com/regression
+        /interpret-r-squared-regression/
+        \item
+    \end{itemize}
+\end{frame}
+
+\end{document}
