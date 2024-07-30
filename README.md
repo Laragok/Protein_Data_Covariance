@@ -60,6 +60,12 @@ opens the model for proteins_projected_pc_coords representation of proteins' mos
 cd Projected_Proteins_Data_Covariance
 jupyter notebook projected_traiend_model_states_0_brightness.ipynb
 ```
-opens the modell for proteins_projected_pcp_coords representation of proteins' brightest state	
+opens the model for proteins_projected_pc_coords representation of proteins' brightest state	
 
 
+##Opening the .tex files
+
+'''
+pdflatex <file_name.tex>
+'''
+opens the .tex file in .pdf format
